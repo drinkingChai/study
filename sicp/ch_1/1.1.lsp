@@ -1,0 +1,15 @@
+; hello-world
+
+(pprint (+ 2 3))
+(defvar size 2)
+(pprint size)
+(pprint (* 5 size))
+(defun square (x) (* x x))
+(pprint (square 5))
+(defvar n 9)
+(defvar m 15)
+(pprint (+ (square n) (square m)))
+(defun sum-of-squares (x y) (+ (square x) (square y)))
+(pprint (sum-of-squares 9 15))
+(defun f (a) (sum-of-squares (+ a 1) (* a 2)))
+(pprint (f 5))
